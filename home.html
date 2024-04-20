@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaMondo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>PizzaMondo</h1>
+    </header>
+    
+    <main>
+        <section id="pizzeria-info">
+            <div>
+                <p>123 Rue inzegane</p>
+                <p>01 23 45 67 89</p>
+                <p>Lundi - Vendredi: 11h00 - 22h00, Samedi - Dimanche: 12h00 - 00h00</p>
+            </div>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul id="pizza-list">
+                <li>
+                    <img src="1.jpeg" alt="Pizza Margherita">
+                    <span>Pizza Margherita</span>
+                    <span>20dh</span>
+                    <button onclick="addToCart('Pizza Margherita', 20)">Ajouter au panier</button>
+                </li>
+                <li>
+                    <img src="2.jpeg" alt="Pizza viande hachée">
+                    <span>Pizza viande hachée</span>
+                    <span>35dh</span>
+                    <button onclick="addToCart('Pizza viande hachée', 35)">Ajouter au panier</button>
+                </li>
+                <li>
+                    <img src="3.jpeg" alt="Pizza fruit de mer">
+                    <span>Pizza fruit de mer</span>
+                    <span>56dh</span>
+                    <button onclick="addToCart('Pizza fruit de mer', 56)">Ajouter au panier</button>
+                </li>
+                <li>
+                    <img src="4.jpeg" alt="Pizza thon">
+                    <span>Pizza thon</span>
+                    <span>25dh</span>
+                    <button onclick="addToCart('Pizza thon', 25)">Ajouter au panier</button>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="order">
+            <h2>Commander en ligne</h2>
+            <div id="cart">
+                <h3>Panier</h3>
+                <ul id="cart-items"></ul>
+                <p>Total : <span id="total">0dh</span></p>
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
